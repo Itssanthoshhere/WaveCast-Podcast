@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Logo from "@/public/Logo-icon.png";
 import menuDot from "@/public/Menu-dot.svg";
@@ -45,11 +45,24 @@ export default function Navbar() {
 
   const [scrolled, setScrolled] = useState(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const pathname = usePathname();
 
   const toggleDropdown = (label: string) => {
     setOpenDropdown((prev) => (prev === label ? null : label));
   };
+
+  // Login & Register Modal
+  const [showModal, setShowModal] = useState(false);
+  const [isLogin, setIsLogin] = useState(true);
 
   return (
     <>
@@ -134,11 +147,23 @@ export default function Navbar() {
 
           {/* Right Section  */}
           <div className="flex items-center gap-4 nav-right">
-            <button className="btn btn1">
+            <button
+              className="btn btn1"
+              onClick={() => {
+                setIsLogin(true);
+                setShowModal(true);
+              }}
+            >
               Login <i className="bi bi-arrow-right-short"></i>
             </button>
 
-            <button className="btn btn2">
+            <button
+              className="btn btn2"
+              onClick={() => {
+                setIsLogin(false);
+                setShowModal(true);
+              }}
+            >
               Register <i className="bi bi-arrow-right-short"></i>
             </button>
 
@@ -239,6 +264,101 @@ export default function Navbar() {
             </div>
           </div>
         </div>
+
+        {/* Login / Register Modal  */}
+        {showModal && (
+          <div className="fixed inset-0 w-full h-screen z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm">
+            <div className="relative bg-[#2D333C] border border-white/10 rounded-3xl p-10 w-[450px] md:w-[500px] shadow-2xl animate-fadeIn">
+              {/* Close */}
+              <button
+                className="absolute top-5 right-5 text-4xl cursor-pointer text-white hover:text-(--primary) transition-all"
+                onClick={() => setShowModal(false)}
+              >
+                ✕
+              </button>
+
+              {/* Title  */}
+              <h2 className="text-3xl font-semibold mb-8 text-white">
+                {isLogin ? "Login to Your Account" : "Register Your Account"}
+              </h2>
+
+              {/* Form  */}
+              <form className="flex flex-col gap-4">
+                {!isLogin && (
+                  <input
+                    type="text"
+                    placeholder="Full Name"
+                    className="w-full bg-gray-800 border border-white/10 text-white px-4 py-3 rounded-xl focus:border-(--primary) focus:outline-none transition-all"
+                    required
+                  />
+                )}
+
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  className="w-full bg-gray-800 border border-white/10 text-white px-4 py-3 rounded-xl focus:border-(--primary) focus:outline-none transition-all"
+                  required
+                />
+
+                <input
+                  type="password"
+                  placeholder="Password"
+                  className="w-full bg-gray-800 border border-white/10 text-white px-4 py-3 rounded-xl focus:border-(--primary) focus:outline-none transition-all"
+                  required
+                />
+
+                {/* Submit  */}
+                <button
+                  type="submit"
+                  className="w-full mt-3 bg-(--primary) text-black py-3 rounded-xl font-semibold hover:bg-orange-300 transition-all cursor-pointer"
+                >
+                  {isLogin ? "Login Now" : "Register Now"}
+                </button>
+              </form>
+
+              {/* Switch Auth  */}
+              <p className="text-center text-sm mt-4 text-white/70 font-semibold">
+                {isLogin ? (
+                  <>
+                    Don't have an account?{" "}
+                    <button
+                      type="button"
+                      className="text-(--primary) cursor-pointer hover:underline transition-all"
+                      onClick={() => setIsLogin(false)}
+                    >
+                      Register Here{" "}
+                    </button>
+                  </>
+                ) : (
+                  <>
+                    Already have an account?{" "}
+                    <button
+                      type="button"
+                      className="text-(--primary) cursor-pointer hover:underline transition-all"
+                      onClick={() => setIsLogin(true)}
+                    >
+                      Login Here{" "}
+                    </button>
+                  </>
+                )}
+              </p>
+
+              {/* Footer  */}
+              <p className="text-center text-sm text-white/50 pt-4 mt-6 border-t border-white/10">
+                By Signing in or signing up to <strong>Itssanthoshhere</strong>,
+                you agree to our{" "}
+                <Link href="/" className="text-(--primary) hover:underline">
+                  Terms Of Use
+                </Link>{" "}
+                and{" "}
+                <Link href="/" className="text-(--primary) hover:underline">
+                  Privacy Policy
+                </Link>
+                .
+              </p>
+            </div>
+          </div>
+        )}
       </div>
     </>
   );
