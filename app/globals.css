@@ -321,11 +321,11 @@ body {
 
 /* Featured Shows Section  */
 .dark-section {
-  background-image: url(../public/texture-bg-1.png);
+  background-image: url(/texture-bg-1.png);
   background-size: cover;
 }
 
 .light-section {
-  background: url(../public/texture-bg-1.png), rgb(38, 38, 41);
+  background: url(/texture-bg-1.png), rgb(38, 38, 41);
   background-size: cover;
 }
