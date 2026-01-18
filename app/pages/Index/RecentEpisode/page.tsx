@@ -106,7 +106,7 @@ export default function RecentEpisode() {
                 <h2 className="text-gray-300 text-3xl md:text-4xl font-semibold">
                   Laughter Unleashed: Join Us for Joyful Conversations Today
                 </h2>
-                <p className="ttext-gray-300 my-4 tracking-wide">
+                <p className="text-gray-300 my-4 tracking-wide">
                   Embark on a journey of unexplored wisdom as we delve into
                   fascinating topics that challenge the mind
                 </p>
