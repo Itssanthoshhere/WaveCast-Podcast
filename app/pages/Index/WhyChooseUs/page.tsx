@@ -15,7 +15,7 @@ export default function WhyChooseUs() {
                 <Image
                   src={WhyChooseUsImg1}
                   alt="WhyChooseUsImg"
-                  className="w-full h-fit border-t-2 border-(--primary pt-5)"
+                  className="w-full h-fit border-t-2 border-(--primary) pt-5"
                 />
 
                 <Image
