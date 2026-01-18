@@ -1,3 +1,9 @@
-export default function index() {
-  return <div></div>;
+import Hero from "./Hero/page";
+
+export default function Index() {
+  return (
+    <>
+      <Hero />
+    </>
+  );
 }
