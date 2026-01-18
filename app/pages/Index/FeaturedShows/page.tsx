@@ -124,7 +124,7 @@ export default function FeaturedShows() {
 
                           <Link href="/app/pages">
                             <p className="py-2 font-light text-gray-200 hover:text-(--primary) tracking-wider transition-all">
-                              <i className="bi bi-mic text-(--primary)"></i>
+                              <i className="bi bi-mic text-(--primary)"></i>{" "}
                               {item.hostName}
                             </p>
                           </Link>
