@@ -51,7 +51,7 @@ export default function FeaturedShows() {
       <div className="dark-section">
         <div className="px-[8%] lg:px-[16%] py-30 pb-0 md:pb-10">
           <div className="flex flex-col md:flex-row justify-between items-center ">
-            <div className="w-full lg:w-1/1">
+            <div className="w-full lg:w-1/2">
               <div className="title flex flex-col gap-2">
                 <div>
                   <h2 className="inline-block px-4 py-2 rounded-full text-(--primary) text-2xl font-normal border border-(--primary)">
