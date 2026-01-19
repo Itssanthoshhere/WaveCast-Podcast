@@ -665,7 +665,7 @@ body {
 }
 
 .page-banner {
-  background: url(../public/Page-banner-bg.png), var(--primary);
+  background: url(/Page-banner-bg.png), var(--primary);
   background-repeat: no-repeat;
   background-position: bottom center;
   overflow: hidden;
