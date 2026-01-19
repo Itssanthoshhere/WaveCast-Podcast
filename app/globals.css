@@ -418,8 +418,9 @@ body {
   left: 0;
   width: 100%;
   height: 130px;
-  background: url(../public/Wave-pattern.png);
+  background: url(/Wave-pattern.png);
   background-repeat: no-repeat;
+  pointer-events: none;
 }
 
 .wave-wrapper-section2::after {
