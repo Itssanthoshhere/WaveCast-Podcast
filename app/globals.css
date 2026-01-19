@@ -600,3 +600,120 @@ body {
     width: 80vw;
   }
 }
+
+/* Episode Listing Section  */
+.page-section {
+  width: 100%;
+  height: 60vh;
+  background: url(../public/texture-bg-1.png), rgb(38, 38, 41);
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 3%;
+  overflow: hidden !important;
+  z-index: 1;
+}
+
+.page-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../public/vector-line.png);
+  background-position: 85% center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: Anim-rotate 5s infinite forwards linear;
+}
+
+.elm2 {
+  top: 10%;
+  left: 5%;
+  animation-delay: 0.3s;
+}
+
+.elm3 {
+  top: 65%;
+  left: 85%;
+  animation-delay: 0.5s;
+}
+
+.elm4 {
+  top: 70%;
+  left: 10%;
+  animation-delay: 0.7s;
+}
+
+.episode-search {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  width: 70%;
+}
+
+.page-banner {
+  background: url(../public/Page-banner-bg.png), var(--primary);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  overflow: hidden;
+}
+
+.page-banner .music-waves {
+  width: 500px;
+  height: 80px;
+}
+
+.page-banner .btn {
+  background-color: var(--text);
+  color: var(--white);
+}
+
+.page-banner .btn2 i {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+/* Episode Listing MQ Section  */
+@media (max-width: 991px) {
+  .elm2 {
+    top: 15%;
+  }
+
+  .episode-search {
+    width: 85%;
+  }
+}
+
+@media (max-width: 600px) {
+  .elm2 {
+    width: 100px;
+    height: 100px;
+  }
+
+  .elm3 {
+    left: 80%;
+    width: 100px;
+    height: 100px;
+  }
+
+  .episode-search {
+    width: 85%;
+  }
+
+  .episode-search input {
+    width: 70%;
+  }
+}

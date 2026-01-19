@@ -31,6 +31,8 @@ export const metadata: Metadata = {
   description: "Podcasting made simple",
 };
 
+import { Toaster } from "react-hot-toast";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -44,6 +46,8 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+
+        <Toaster position="top-right" reverseOrder={false} />
       </body>
     </html>
   );
