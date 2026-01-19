@@ -119,6 +119,7 @@ export default function Footer() {
                     className="text-(--primary) text-xl"
                     href="https://santhosh-vs-portfolio.vercel.app/"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Itssanthoshhere
                   </Link>
