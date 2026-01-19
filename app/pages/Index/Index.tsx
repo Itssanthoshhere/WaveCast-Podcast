@@ -1,3 +1,4 @@
+import Banner from "./Banner/page";
 import FeaturedShows from "./FeaturedShows/page";
 import Hero from "./Hero/page";
 import HostProfiles from "./HostProfiles/page";
@@ -14,6 +15,7 @@ export default function Index() {
       <RecentEpisode />
       <HostProfiles />
       <Testimonial />
+      <Banner />
     </>
   );
 }
