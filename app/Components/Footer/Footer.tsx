@@ -64,16 +64,16 @@ export default function Footer() {
                       About
                     </h3>
                   </a>
-                  <a href="/pages/Episodes">
+                  <Link href="/pages/Episodes">
                     <h3 className="text-gray-300 text-xl hover:text-(--primary) hover:translate-x-1 transition-all duration-300 cursor-pointer">
                       Episodes
                     </h3>
-                  </a>
-                  <a href="/pages/Blogs">
+                  </Link>
+                  <Link href="/pages/Blogs">
                     <h3 className="text-gray-300 text-xl hover:text-(--primary) hover:translate-x-1 transition-all duration-300 cursor-pointer">
                       Blog
                     </h3>
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -115,13 +115,13 @@ export default function Footer() {
               <div className="flex flex-wrap justify-center lg:justify-between items-center text-center gap-5">
                 <p className="text-gray-300">
                   © Copyright 2026. All Rights Reserved by{" "}
-                  <a
+                  <Link
                     className="text-(--primary) text-xl"
                     href="https://santhosh-vs-portfolio.vercel.app/"
                     target="_blank"
                   >
                     Itssanthoshhere
-                  </a>
+                  </Link>
                 </p>
                 <div className="flex items-center gap-3">
                   <Link
