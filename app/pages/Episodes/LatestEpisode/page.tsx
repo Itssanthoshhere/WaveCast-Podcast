@@ -166,7 +166,7 @@ export default function LatestEpisodes() {
         </div>
       </div>
 
-      <div className="px-[8%] lg:px-[10%] py-20">
+      <div className="px-[8%] lg:px-[10%] py-20 dark-section">
         <div className="page-banner p-5 md:p-15 flex flex-col justify-center items-center text-center rounded-2xl relative">
           <Image
             src={pageBanner1}
