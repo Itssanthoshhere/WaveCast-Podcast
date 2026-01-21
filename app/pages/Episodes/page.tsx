@@ -189,7 +189,7 @@ export default function Episodes() {
                 <div className="w-full lg:w-1/1">
                   <div className="p-1 md:p-5">
                     <div className="flex flex-row flex-wrap justify-between items-center">
-                      <Link href={`/app/pages/Episodes/${episode.id}`}>
+                      <Link href={`/pages/Episodes/${episode.id}`}>
                         <p className="font-light text-gray-200 hover:text-(--primary) tracking-wider transition-all duration-200">
                           <i className="bi bi-mic text-(--primary)"></i>
                           {episode.name}
@@ -219,7 +219,7 @@ export default function Episodes() {
 
                     <div className="flex flex-wrap justify-between items-center gap-5">
                       <Link
-                        href={`/app/pages/Episodes/${episode.id}`}
+                        href={`/pages/Episodes/${episode.id}`}
                         className="flex items-center gap-2 group"
                       >
                         <i className="bi bi-play p-4 bg-(--primary) rounded-full flex text-black text-2xl group-hover:bg-(--second) group-hover:text-white items-center justify-center transition-all duration-200"></i>
