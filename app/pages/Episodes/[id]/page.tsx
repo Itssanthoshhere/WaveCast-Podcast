@@ -224,7 +224,7 @@ export default function EpisodeDetails() {
                             </div>
 
                             <div className="">
-                              <h2 className="text-4xl hover:text-(--prim) transition-all duration-200">
+                              <h2 className="text-4xl hover:text-(--primary) transition-all duration-200">
                                 {episode.title}
                               </h2>
 
