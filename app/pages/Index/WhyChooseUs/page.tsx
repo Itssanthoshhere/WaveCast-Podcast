@@ -75,7 +75,7 @@ export default function WhyChooseUs() {
                 </button>
 
                 <Link
-                  href="/app/pages"
+                  href="/pages/About"
                   className="flex items-center gap-2 group"
                 >
                   <i className="bi bi-play p-4 bg-(--primary) rounded-full flex items-center justify-center text-black text-2xl group-hover:text-white cursor-pointer transition-all duration-200"></i>

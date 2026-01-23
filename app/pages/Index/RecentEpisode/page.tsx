@@ -26,9 +26,11 @@ export default function RecentEpisode() {
                 Dive into the most recent episodes that just hit the airwaves.
                 Discover what's trending in our podcast world.
               </p>
-              <button className="btn btn2 mt-4" style={{ fontWeight: 500 }}>
-                View All Episodes <i className="bi bi-arrow-right-short"></i>
-              </button>
+              <Link href="/pages/Episodes">
+                <button className="btn btn2 mt-4" style={{ fontWeight: 500 }}>
+                  View All Episodes <i className="bi bi-arrow-right-short"></i>
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -46,7 +48,7 @@ export default function RecentEpisode() {
 
               <div className="w-full lg:w-1/2">
                 <div className="flex flex-wrap items-center gap-5 py-5">
-                  <Link href="/app/pages">
+                  <Link href="/pages/Episodes">
                     <h2 className="text-(--text) hover:text-black">
                       <i className="bi bi-mic"></i> Devon Lane
                     </h2>
@@ -70,7 +72,7 @@ export default function RecentEpisode() {
                 </p>
                 <div className="flex flex-wrap justify-between items-center gap-5">
                   <Link
-                    href="/app/pages"
+                    href="/pages/Episodes"
                     className="flex items-center gap-2 group"
                   >
                     <i className="bi bi-play p-4 bg-black rounded-full flex items-center justify-center text-(--primary) text-2xl group-hover:bg-(--second) group-hover:text-white cursor-pointer transition-all duration-200"></i>
@@ -90,7 +92,7 @@ export default function RecentEpisode() {
             <div className="w-full lg:w-1/2">
               <div className="p-6 rounded-2xl bg-(--gray-light)">
                 <div className="flex flex-wrap  items-center gap-5">
-                  <Link href="/app/pages">
+                  <Link href="/pages/Episodes">
                     <h2 className="text-gray-300">
                       <i className="bi bi-mic"></i> Devon Lane
                     </h2>
@@ -112,7 +114,7 @@ export default function RecentEpisode() {
                 </p>
                 <div className="flex flex-wrap justify-between items-center gap-5">
                   <Link
-                    href="/app/pages"
+                    href="/pages/Episodes"
                     className="flex items-center gap-2 group"
                   >
                     <i className="bi bi-play p-4 bg-(--primary) rounded-full flex items-center justify-center text-black text-2xl group-hover:bg-(--second) group-hover:text-white cursor-pointer transition-all duration-200"></i>
@@ -129,7 +131,7 @@ export default function RecentEpisode() {
             <div className="w-full lg:w-1/2">
               <div className="p-6 rounded-2xl bg-(--gray-light)">
                 <div className="flex flex-wrap items-center gap-5">
-                  <Link href="/app/pages">
+                  <Link href="/pages/Episodes">
                     <h2 className="text-gray-300">
                       <i className="bi bi-mic"></i> Devon Lane
                     </h2>
@@ -151,7 +153,7 @@ export default function RecentEpisode() {
                 </p>
                 <div className="flex flex-wrap justify-between items-center gap-5">
                   <Link
-                    href="/app/pages"
+                    href="/pages/Episodes"
                     className="flex items-center gap-2 group"
                   >
                     <i className="bi bi-play p-4 bg-(--primary) rounded-full flex items-center justify-center text-black text-2xl group-hover:bg-(--second) group-hover:text-white cursor-pointer transition-all duration-200"></i>

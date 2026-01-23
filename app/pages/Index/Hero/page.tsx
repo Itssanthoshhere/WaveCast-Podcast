@@ -8,6 +8,7 @@ import brand4 from "@/public/brand-icon-4.png";
 import brand5 from "@/public/brand-icon-5.png";
 import HeroImg from "@/public/Hero.png";
 import roundedText from "@/public/Rouded-text.webp";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -35,13 +36,17 @@ export default function Hero() {
                 </p>
 
                 <div className="hero-btn flex items-center gap-5 my-5">
-                  <button className="btn btn2">
-                    Latest Episode <i className="bi bi-arrow-right-short"></i>
-                  </button>
+                  <Link href="/pages/Episodes/LatestEpisode">
+                    <button className="btn btn2">
+                      Latest Episode <i className="bi bi-arrow-right-short"></i>
+                    </button>
+                  </Link>
 
-                  <button className="btn btn1">
-                    Subscribe <i className="bi bi-arrow-right-short"></i>
-                  </button>
+                  <Link href="/pages/Pricing">
+                    <button className="btn btn1">
+                      Subscribe <i className="bi bi-arrow-right-short"></i>
+                    </button>
+                  </Link>
                 </div>
 
                 <div className="mt-10">
