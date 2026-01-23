@@ -34,7 +34,7 @@ const navLinks: NavLink[] = [
       { label: "Pricing Plan", href: "/pages/Pricing" },
       { label: "Faq's", href: "/pages/Faqs" },
       { label: "Contact Us", href: "/pages/Contact" },
-      { label: "Page404", href: "/pages/not-found" },
+      { label: "Page404", href: "/pages/not-found.tsx" },
     ],
   },
 ];
