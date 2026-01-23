@@ -118,7 +118,7 @@ export default function Faqs() {
             <div className="border border-dashed border-(--primary) mt-3 mb-5 opacity-30"></div>
             {/* Faq content */}
             <div className="space-y-4">
-              {faqs.map((faqs, index) => {
+              {faqs.map((faq, index) => {
                 const isOpen = openIndex === index;
 
                 return (
@@ -135,7 +135,7 @@ export default function Faqs() {
                       onClick={() => toggleFaq(index)}
                     >
                       <h3 className="text-md md:text-xl font-medium">
-                        {faqs.question}
+                        {faq.question}
                       </h3>
 
                       {/* Icon  */}
@@ -161,7 +161,7 @@ export default function Faqs() {
                           : "max-h-0 opacity-0"
                       }`}
                     >
-                      <p className="text-sm">{faqs.answer}</p>
+                      <p className="text-sm">{faq.answer}</p>
                     </div>
                   </div>
                 );
