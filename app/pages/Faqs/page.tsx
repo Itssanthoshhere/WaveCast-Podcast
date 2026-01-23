@@ -144,7 +144,7 @@ export default function Faqs() {
                           isOpen
                             ? "bg-black text-(--primary)"
                             : "bg-(--primary) text-black"
-                        } bg-(--primary) text-black`}
+                        }}`}
                       >
                         <i
                           className={`bi ${
