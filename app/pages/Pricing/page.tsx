@@ -305,7 +305,7 @@ export default function Pricing() {
                 </li>
               </ul>
 
-              <div className="border-b border-dashed border-(--prim-light) opacity-50"></div>
+              <div className="border-b border-dashed border-(--primary-light) opacity-50"></div>
 
               <button className="btn btn1 mt-8">
                 Get Started Now <i className="bi bi-arrow-right-short"></i>
