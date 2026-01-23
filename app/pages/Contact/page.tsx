@@ -147,7 +147,7 @@ export default function Contact() {
                 </div>
 
                 <h1 className="text-6xl mt-3 mb-8 font-semibold">
-                  Have questions? don't hesitate to{" "}
+                  Have questions? Don't hesitate to{" "}
                   <span className="text-(--primary)"> contact us </span>
                 </h1>
 
