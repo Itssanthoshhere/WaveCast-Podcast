@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Kanit, Metal_Mania } from "next/font/google";
 import "./globals.css";
-import Navbar from "./Components/Nav/Navbar";
-import Footer from "./Components/Footer/Footer";
+// import Navbar from "./Components/Nav/Navbar";
+// import Footer from "./Components/Footer/Footer";
 
 const kanit = Kanit({
   weight: ["200", "300", "400", "500", "600", "700"],
@@ -32,6 +32,7 @@ export const metadata: Metadata = {
 };
 
 import { Toaster } from "react-hot-toast";
+import ClientWrapper from "./Components/ClientWrapper";
 
 export default function RootLayout({
   children,
@@ -43,9 +44,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${kanit.variable} ${metalMania.variable}`}
       >
-        <Navbar />
-        {children}
-        <Footer />
+        {/* <Navbar /> */}
+        <ClientWrapper>{children}</ClientWrapper>
+        {/* <Footer /> */}
 
         <Toaster position="top-right" reverseOrder={false} />
       </body>
