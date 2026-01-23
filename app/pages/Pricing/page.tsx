@@ -215,7 +215,7 @@ export default function Pricing() {
 
                 <div className="flex items-end gap-1 mb-5">
                   <h1 className="text-5xl text-(--primary) font-semibold">
-                    {billing === "monthly" ? "29.00" : "329.00"}
+                    {billing === "monthly" ? "29.00" : "240.00"}
                   </h1>
                   <span className="text-xl text-(--primary)">
                     /{billing === "monthly" ? "Mo" : "Yr"}
@@ -266,7 +266,7 @@ export default function Pricing() {
                 <h4 className="font-semibold text-xl mb-2">Special</h4>
                 <div className="flex items-end gap-1 mb-5">
                   <h1 className="text-5xl text-(--primary) font-semibold">
-                    {billing === "monthly" ? "99.00" : "999.00"}
+                    {billing === "monthly" ? "99.00" : "830.00"}
                   </h1>
                   <span className="text-xl text-(--primary)">
                     /{billing === "monthly" ? "Mo" : "Yr"}
