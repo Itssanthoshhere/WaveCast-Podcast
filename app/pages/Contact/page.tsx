@@ -208,7 +208,7 @@ export default function Contact() {
                   <div className="border-b py-2 border-dashed border-(--primary)/30"></div>
 
                   <div className="mt-5">
-                    <form>
+                    <form onSubmit={(e) => e.preventDefault()}>
                       <div className="flex flex-col gap-1">
                         <label>Name</label>
                         <input
@@ -244,8 +244,7 @@ export default function Contact() {
                           className="outline-none bg-(--gray-color) px-4 py-3 rounded-lg border border-transparent focus:border-(--primary) transition-all duration-300 resize-none"
                         ></textarea>
                       </div>
-
-                      <button className="btn btn2 mt-4 w-fit">
+                      <button type="submit" className="btn btn2 mt-4 w-fit">
                         Send Message <i className="bi bi-arrow-right-short"></i>
                       </button>
                     </form>
