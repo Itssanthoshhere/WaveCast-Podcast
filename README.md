@@ -26,6 +26,11 @@ It focuses on clean architecture, smooth UX, and scalable frontend design.
 
 <i>Built as a production-ready frontend, ready for backend & audio player integration.</i>
 
+  <a href="https://wave-cast-podcast.vercel.app/" target="_blank">
+    <img src="https://img.shields.io/badge/🚀%20Live%20Demo-brightgreen?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo" />
+  </a>
+<br />
+
 </div>
 
 ---
