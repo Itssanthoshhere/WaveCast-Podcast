@@ -22,7 +22,7 @@
 <b>WaveCast</b> is a fully responsive podcast platform built with <b>Next.js App Router</b>, designed to explore podcasts, episodes, blogs, hosts, and subscriptions in a modern UI.<br/>
 It focuses on clean architecture, smooth UX, and scalable frontend design.
 
-<br />
+<!-- <br /> -->
 
 <i>Built as a production-ready frontend, ready for backend & audio player integration.</i>
 
